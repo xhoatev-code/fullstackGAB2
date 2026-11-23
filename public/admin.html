@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogoni Incident Reports</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand bg-white border-bottom">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fw-bold">Ogoni Incident Reports</a>
+            <div class="navbar-nav ms-auto align-content-center">
+                <a href="index.html" class="nav-link">Incidents</a>
+                <a href="index.html" class="nav-link">About</a>
+                <a href="login.html" class="nav-link">Sign In</a>
+                <a href="index.html" class="btn btn-success btn-sm ms-3">Report an Incident</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1>Admin DAshboard</h1>
+        <p>For HYPREP staff. set each report's status and leave remark for for the public.</p>
+
+        <div class="admin-bar d-flex align-items-center gap-3 mb-4 p-3 border rounded-3">
+            <label for="adminKey" class="fw-semibold">Staff Key</label>
+            <input type="password" class="form-control w-auto" placeholder="Enter Staff Passsword">
+            <span class="small text-muted">You need to save or delete a remark.</span>
+        </div>
+
+        <div id="message"></div>
+
+        <div class="card">
+            <table class="table mb-0 align-middle admin-table">
+                <thead>
+                    <tr>
+                        <th>Report</th>
+                        <th>Severity</th>
+                        <th>Status</th>
+                        <th>Remark</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="adminList">
+                    <tr>
+                        <td>
+                            <a href="incident.html">Crude Spill at K-Dere Creek</a> <br>
+                            <span>K-Dere, Gokana . 22 Sept. 2026</span>
+                        </td>
+                        <td>High</td>
+                        <td>
+                            <select name="" id="" class="form-select form-select-sm">
+                                <option selected>New</option>
+                                <option>Under Review</option>
+                                <option>Resoled</option>
+                                <option>Not an incident</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-sm" placeholder="What was recorded">
+                        </td>
+                        <td class="nowrap">
+                            <button class="btn btn-success btn-sm">Save</button>
+                            <button class="btn btn-outline-danger btn-sm">Save</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </main>
+
+
+
+
+    <footer class="site-footer bg-dark text-light py-4">
+        <div class="container d-flex justify-content-between small">
+            <span>Ogoni Incident Reports - a public record of environmental incidents in OgoniLand</span>
+            <span>Built by Xhoate. HYPREP Capstone 2026.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

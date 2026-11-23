@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogoni Incident Reports</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand bg-white border-bottom">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fw-bold">Ogoni Incident Reports</a>
+            <div class="navbar-nav ms-auto align-content-center">
+                <a href="index.html" class="nav-link">Incidents</a>
+                <a href="index.html" class="nav-link">About</a>
+                <a href="login.html" class="nav-link">Sign In</a>
+                <a href="index.html" class="btn btn-success btn-sm ms-3">Report an Incident</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="form-page py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="card form-card">
+                        <div class="card-body p-4">
+                            <h1>Sign in</h1>
+                            <p class="text-muted">Use the Phone Number you singned up with and the 6 digit report code
+                            </p>
+                            <form onsubmit="loginReporter(event, this)" id="loginForm">
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="number" name="phone" id="phone" class="form-control"
+                                        aria-placeholder="e.g 09036684881">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="code" class="form-label">Reporter Code</label>
+                                    <input type="number" name="code" id="code" class="form-control"
+                                        aria-placeholder="e.g 090366">
+                                </div>
+                                <button class="btn btn-primary">Login</button>
+
+                            </form>
+                            <div id="message">
+                                <p class="small text-muted mt-3 mb-0">New here? <a href="signup.html">Create An
+                                        Account</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer class="site-footer bg-dark text-light py-4">
+        <div class="container d-flex justify-content-between small">
+            <span>Ogoni Incident Reports - a public record of environmental incidents in OgoniLand</span>
+            <span>Built by Xhoate. HYPREP Capstone 2026.</span>
+        </div>
+    </footer>
+
+    <script src="js/api_reporters.js"></script>
+
+</body>
+
+</html>
